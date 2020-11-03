@@ -41,4 +41,3 @@ const store = [
   },
 ];
 
-// Ta bort package.json node modules osv ... skapa ny branch!(utveckling)
