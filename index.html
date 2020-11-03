@@ -4,10 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles.css" />
-    <title>Document</title>
+    <title>Laptop store</title>
   </head>
   <body>
-    <div class="container"></div>
+    <header class="flex-container"><h1>Komputer Store</h1></header>
+
+    <div class="container flex-container">
+      <div class="input-value-container flex-container">
+        <div class="bank-info">
+          <h3>Joe Banker</h3>
+          <div class="info-money">
+            <p>Balance:</p>
+            <p id="bank-balance">2000 Kr.</p>
+          </div>
+
+          <button id="btn-get-loan" class="big-btn">Get Loan</button>
+        </div>
+        <div class="work-info">
+          <h3>Work</h3>
+          <div class="info-money">
+            <p>Pay:</p>
+            <p id="pay-balance">0 Kr.</p>
+          </div>
+
+          <div class="flex-container">
+            <button id="btn-bank" class="small-btn">Bank</button>
+            <button id="btn-work" class="small-btn">Work</button>
+          </div>
+        </div>
+
+        <div class="laptop-info">
+          <h3>Laptops</h3>
+
+          <select name="laptops" id="laptops">
+            <option value="1">HP notebook</option>
+            <option value="2">Surface</option>
+            <option value="3">Dell</option>
+            <option value="4">Lenovo</option>
+          </select>
+
+          <h4>Features:</h4>
+          <p id="features-output"></p>
+        </div>
+      </div>
+
+      <div class="display-results-container flex-container">
+        <img id="laptop-image" alt="image" />
+        <div class="results-description">
+          <h2 id="laptop-name"></h2>
+          <p id="laptop-description">.</p>
+        </div>
+        <div>
+          <h2 id="laptop-price"></h2>
+          <button id="btn-buy-now" class="big-btn">Buy now</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/store.js"></script>
     <script src="/index.js"></script>
   </body>
 </html>

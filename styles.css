@@ -4,11 +4,221 @@
   box-sizing: border-box;
 }
 
-html {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .input-value-container,
+  .display-results-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .input-value-container,
+  .display-results-container {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+  .laptop-info {
+    flex-grow: 1;
+  }
+
+  .laptop-info select {
+    width: 100%;
+  }
+
+  #features-output {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .laptop-info h3,
+  .laptop-info h4,
+  #features-output {
+    text-align: center;
+  }
+
+  .display-results-container div {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .laptop-info {
+    flex-grow: 0;
+  }
+
+  .laptop-info select {
+    width: unset;
+  }
+
+  #features-output {
+    max-width: 200px;
+  }
+
+  .laptop-info h3,
+  .laptop-info h4,
+  #features-output {
+    text-align: unset;
+  }
+
+  .display-results-container div {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+header {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  justify-content: flex-start !important;
+}
+
+header > h1 {
+  margin-left: 140px;
+}
+
+.input-value-container,
+.display-results-container {
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.display-results-container {
+  border: 2px solid rgb(234 231 231);
+  border-radius: 13px;
+}
+
+.small-btn {
+  padding: 0.3em 1.2em;
+  border-radius: 0.5em;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  border: 0.16em solid rgb(27 27 27 / 0%);
+  cursor: pointer;
+  outline: none;
+}
+
+.big-btn {
+  padding: 7px 25px 7px 25px;
+  border-radius: 0.5em;
+  border: 0.16em solid rgb(27 27 27 / 0%);
+  color: black;
+  cursor: pointer;
+  min-width: 150px;
+  outline: none;
+}
+
+#btn-get-loan {
+  background-color: rgb(76 240 161);
+}
+
+#btn-get-loan:hover {
+  background-color: rgb(76 240 161 / 62%);
+}
+
+#btn-buy-now {
+  background-color: #4cc9f0;
+}
+
+#btn-buy-now:hover {
+  background-color: #4cc9f0b5;
+}
+
+.small-btn:first-of-type {
+  margin-right: 5px;
+  color: black;
+
+  background-color: rgb(237, 240, 76);
+}
+
+.small-btn:first-of-type:hover {
+  background-color: rgb(237 240 76 / 66%);
+}
+
+.small-btn:last-of-type {
+  color: white;
+
+  margin-right: 5px;
+  background-color: rgb(76, 112, 240);
+}
+
+.small-btn:last-of-type:hover {
+  background-color: rgb(76 112 240 / 84%);
+}
+
+.info-money {
+  display: flex;
+  justify-content: space-between;
+}
+.info-money p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+select {
+  min-width: 100px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+img {
+  width: 120px;
+}
+
+.results-description {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+}
+
+.results-description h2 {
+  text-align: center;
+}
+
+.container {
+  padding-bottom: 3rem;
 }
